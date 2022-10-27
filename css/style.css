@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+@import url("component/container.css");
+@import url("component/avatar.css");
+@import url("component/btn-blue.css");
+@import url("component/banner.css");
+@import url("component/card.css");
+@import url("component/card-grid.css");
+
+body{
+	background: #182747;
+	color: rgb(255, 255, 255);
+	font-family: helvetica;
+	font-size: 17px;
+}
+
+h1, h2, h3 ,{
+	font-family: 'Roboto', sans-serif;
+	margin: 0px auto;
+}
+
+h1{
+	font-size: 90px;
+	position: relative;
+  	font-family: Impact, sans-serif;
+  	letter-spacing: 2px;
+  	background: linear-gradient(90deg, #90ee90, #182747, #000);
+  	background-size: 80%;
+  	animation: animate 15s infinite;
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: rgba(255, 255, 255, 0.68);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+

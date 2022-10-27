@@ -1,0 +1,62 @@
+/* règles de bases de ma carte */
+.card{
+	width: 300px; 
+  margin: 0px auto; 
+  background-color: #F9F9F9; 
+  box-shadow: 0px 5px 20px #277BC0; 
+ }
+
+.card a { 
+  color: #333; 
+  text-decoration: none;
+}
+
+.card:hover .card-image img { 
+  width: 50%;
+  filter: grayscale(0);
+}
+/* image de ma carte */
+.card-image {
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+.card-image img {
+  width: 65%;
+    /*pour centrer mon image*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    /* Transition */
+  transition-property: filter width; 
+  transition-duration: .2s;
+  transition-timing-function: ease;
+}
+/* alignement et box-sizing de ma carte */
+.card-body {
+    text-align:center;  
+  padding: 15px 20px; 
+  box-sizing: border-box; 
+}
+
+/*typographie*/
+.card-price {
+  font-family: Helvetica, serif;
+  color: red;
+}
+
+.card-title, .card-legende{
+   font-family: 'Playfair Display', serif;
+}
+
+.card-price, .card-title {
+  text-align:center;
+  text-transform:uppercase;
+  font-weight: bold;
+}
+
+.card-legende {
+  color: #002E94;
+}
+
